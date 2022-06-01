@@ -1,0 +1,151 @@
+body{
+    padding: 1.5em;
+    background-color: black;
+}
+header{
+  display: flex; 
+  justify-content: space-between; 
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: white;
+    height: 97vh;
+    width: 50%;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    z-index: 2;
+}
+ul{
+    list-style: none;
+    padding: o;
+    margin-top: 8rem;
+}
+a{
+    text-decoration: none;
+    display: block;
+    padding: .75em 2em;
+
+}
+a:hover{
+    background-color: grey;
+    width: 50%;
+    color: white;
+}
+.wrong{
+    width: 2rem;
+    float:right;
+    margin: 2rem;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font: 1.5rem;
+    border: 1px solid white;
+    padding: 1rem;
+    
+}
+.menu{
+    width: 3rem;
+}
+
+
+
+.icon{
+    color: white;
+    height: 90vh;
+}
+.icon-paragraph{
+    font-size: 1.5rem;
+}
+.btn{
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2rem;
+    padding-left: 1em;
+    border-bottom: 1px solid blue;
+}
+.text{
+    font-size: 3rem;
+    margin-top: 2rem;
+    line-height: 3.3rem;
+}
+.image1{
+    width: 100%;
+    object-fit: cover;
+}
+.aliza{
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.image2{
+    background-color: black;
+    opacity: .9;
+    width: 70%;
+    
+    
+    padding-left: 2em;
+    margin-top: -4rem;
+    
+}
+.open-nav{
+    transform: translateX(0%);
+}
+
+.grid{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+.paragraph{
+    margin-left: -4rem;
+}
+
+@media(max-width:680px){
+    body{
+        padding: 1.5em;
+    }
+    
+}
+@media(min-width:920px){
+    .menu{
+        display: none;
+    }
+
+    nav{
+        transform: translateX(0);
+        position: unset;
+        width: auto;
+        height: auto;
+        display: block;
+        background: none;
+    }
+    .close{
+        display: none;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+    }
+    a{
+        color: white;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 8rem;
+    }
+}
+@media(min-width:1200){
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;  
+    }
+}
